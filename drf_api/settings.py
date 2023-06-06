@@ -56,8 +56,6 @@ INSTALLED_APPS = [
 
     
     'profiles', 
-
-
 ]
 
 MIDDLEWARE = [
