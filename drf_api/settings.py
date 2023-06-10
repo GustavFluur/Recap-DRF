@@ -22,8 +22,19 @@ CLOUDINARY_URL = {
 
 }
 
+
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY = {
+
+
+    'CLOUD_NAME': 'deudink05',  
+    'API_KEY': '481435885787938',  
+    'API_SECRET': 'DtXxeigVOf0S2Fz8Nz0lHx786Lc',
+    'API_PROXY': 'http://proxy.server:3128'
+
+}
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,7 +49,7 @@ SECRET_KEY = 'django-insecure-da(rg!&q*(5m7k-7w)dyz_sv^n35!b5n&md^+y8mygdf+3ezi!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gustavfluur-recapdrf-evkicm5osv2.ws-eu98.gitpod.io']
+ALLOWED_HOSTS = ['8000-gustavfluur-recapdrf-evkicm5osv2.ws-eu99.gitpod.io']
 
 
 # Application definition
@@ -52,7 +63,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-
+    'rest_framework',
 
     
     'profiles', 
@@ -142,3 +153,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
