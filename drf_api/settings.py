@@ -26,13 +26,12 @@ CLOUDINARY_URL = {
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CLOUDINARY = {
+CLOUDINARY_STORAGE = {
 
 
     'CLOUD_NAME': 'deudink05',  
     'API_KEY': '481435885787938',  
     'API_SECRET': 'DtXxeigVOf0S2Fz8Nz0lHx786Lc',
-    'API_PROXY': 'http://proxy.server:3128'
 
 }
 
@@ -66,7 +65,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     
-    'profiles', 
+    'profiles' 
 ]
 
 MIDDLEWARE = [
